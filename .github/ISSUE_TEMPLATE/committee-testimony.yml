@@ -1,0 +1,49 @@
+name: "🏛️ Committee Testimony"
+description: "Record of committee testimony or witness statement"
+labels: ["committee", "testimony"]
+body:
+  - type: input
+    id: bill
+    attributes:
+      label: "Related Bill"
+      description: "Bill number (e.g., C-11)"
+      placeholder: "C-11"
+    validations:
+      required: true
+  - type: input
+    id: committee
+    attributes:
+      label: "Committee"
+      description: "Name of the committee"
+      placeholder: "Standing Committee on Canadian Heritage"
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: "Date"
+      description: "Date of testimony"
+      placeholder: "2024-01-15"
+    validations:
+      required: true
+  - type: input
+    id: witness
+    attributes:
+      label: "Witness"
+      description: "Name and title of the witness"
+      placeholder: "Jane Smith, CEO of Example Corp"
+    validations:
+      required: true
+  - type: textarea
+    id: testimony
+    attributes:
+      label: "Testimony"
+      description: "Summary or transcript of the testimony"
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: "Source URL"
+      description: "Link to the committee proceedings"
+      placeholder: "https://www.parl.ca/committees/..."

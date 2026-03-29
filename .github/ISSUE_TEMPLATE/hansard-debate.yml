@@ -1,0 +1,50 @@
+name: "📜 Hansard Debate"
+description: "Record of parliamentary debate from Hansard"
+labels: ["hansard", "debate"]
+body:
+  - type: input
+    id: bill
+    attributes:
+      label: "Related Bill"
+      description: "Bill number (e.g., C-11)"
+      placeholder: "C-11"
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: "Date"
+      description: "Date of the debate"
+      placeholder: "2024-01-15"
+    validations:
+      required: true
+  - type: input
+    id: speaker
+    attributes:
+      label: "Speaker"
+      description: "Name of the MP speaking"
+      placeholder: "Pablo Rodriguez"
+    validations:
+      required: true
+  - type: dropdown
+    id: chamber
+    attributes:
+      label: "Chamber"
+      options:
+        - House of Commons
+        - Senate
+    validations:
+      required: true
+  - type: textarea
+    id: transcript
+    attributes:
+      label: "Transcript"
+      description: "Text of the speech or exchange"
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: "Source URL"
+      description: "Link to the original Hansard record"
+      placeholder: "https://openparliament.ca/debates/..."
